@@ -13,7 +13,7 @@ window.addEventListener("load", function() {
         // Set matrix height equal to height of title element
         matrix.style.height = title.clientHeight + "px";
     
-        // Generate codeblocks
+        // Generates binary strings
         for (var i = 0; i <= Math.round(window.innerWidth / 20); i++) {
     
             // Define length of binary string
