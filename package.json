@@ -1,0 +1,25 @@
+{
+  "name": "clement_s_hill",
+  "version": "1.0.0",
+  "description": "Portfolio website to show off from software engineering skills",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "portfolio",
+    "clement",
+    "hill",
+    "software",
+    "engineer",
+    "programmer",
+    "website",
+    "resume"
+  ],
+  "author": "Clement Hill",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}
