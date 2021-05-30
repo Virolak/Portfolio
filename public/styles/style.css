@@ -101,16 +101,16 @@ article {
     flex-direction:column;
     justify-content:center;
     width:100%;
-    padding:6rem 0 ;
+    padding:3rem 0;
     float:left;
     border-radius:0.2rem;
 }
 
-article:nth-of-type(even) {
+/* article:nth-of-type(even) {
     color:#000000;
     background-color: #ffffff;
     padding:1rem;
-}
+} */
 
 article h3 {
     clear:both;
@@ -119,17 +119,19 @@ article h3 {
     text-align: center;
     display: block;
     margin: 0 auto 0.5rem auto;
-    max-width:20rem;
+    /* width:100%; */
+    width:30rem;
+    max-width:100%;
     /* font-weight: 100; */
 }
 
-article:nth-of-type(even) h3 {
+/* article:nth-of-type(even) h3 {
     border-color:#000000;
-}
+} */
 
-article:nth-of-type(even) .divide {
+/* article:nth-of-type(even) .divide {
     background-color:#000000;
-}
+} */
 
 article p {
     margin:0;
@@ -140,6 +142,7 @@ article p {
 .divide {
     display:block;
     width:25rem;
+    max-width:80%;
     height:6px;
     background-color:green;
     margin:auto;
@@ -147,7 +150,12 @@ article p {
 }
 
 #social {
+    float:left;
+    height:3rem;
+    width:100%;
+    margin:auto;
     color:white;
+    margin-bottom:3rem;
 }
 
 #social ul {
@@ -290,6 +298,47 @@ article div:last-of-type {
     margin-right:0;
 }
 
+.project {
+    color:white;
+    width:30%;
+    padding:0;
+    margin-right:5%;
+    border-radius:0.2rem;
+    float:left;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.project:nth-of-type(3n) {
+    margin-right:0;
+}
+
+.project h4 {
+    margin:1rem;
+}
+
+.project:hover {
+    color:green;
+    transform:scale(1.1);
+    transition:transform 0.2s ease, color 0.2s ease;
+}
+
+.project:hover img {
+    border-color:green;
+}
+
+.project h4 {
+    text-align: center;
+}
+
+.project img {
+    width:100%;
+    border:2px solid #aaaaaa;
+    padding:0;
+    margin:0;
+    float:left;
+    display:block;
+}
+
 @keyframes moveDown {
     100% {
         bottom:-50%;
@@ -348,5 +397,9 @@ article div:last-of-type {
 
     #social li:last-of-type {
         text-align:left;
+    }
+
+    .project {
+        width:100%;
     }
 }
