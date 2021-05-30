@@ -44,6 +44,11 @@ h1, h2 {
 section {
     display:block;
     margin:auto;
+    height:100%;
+}
+
+main {
+    height:100%;
 }
 
 nav {
@@ -77,6 +82,8 @@ nav a {
     padding:2rem;
     float:left;
     transition: transform 0.2s ease;
+    box-shadow:4px 4px #00000033, -2px -2px #ffffff;
+    border-radius:0.2rem
 }
 
 nav li:last-of-type {
@@ -88,10 +95,21 @@ nav a:hover {
     transition: transform 0.2s ease;
 }
 
+
 article {
+    display:block;
+    flex-direction:column;
+    justify-content:center;
     width:100%;
+    padding:6rem 0 ;
     float:left;
-    margin-top:3rem;
+    border-radius:0.2rem;
+}
+
+article:nth-of-type(even) {
+    color:#000000;
+    background-color: #ffffff;
+    padding:1rem;
 }
 
 article h3 {
@@ -105,6 +123,14 @@ article h3 {
     /* font-weight: 100; */
 }
 
+article:nth-of-type(even) h3 {
+    border-color:#000000;
+}
+
+article:nth-of-type(even) .divide {
+    background-color:#000000;
+}
+
 article p {
     margin:0;
     padding:0;
@@ -114,9 +140,49 @@ article p {
 .divide {
     display:block;
     width:25rem;
-    border:3px solid green;
+    height:6px;
+    background-color:green;
     margin:auto;
     margin-bottom:2rem;
+}
+
+#social {
+    color:white;
+}
+
+#social ul {
+    float:left;
+    width:100%;
+    display:block;
+    margin:1rem 0 0 0;
+    padding:0;
+    list-style-type:none;
+}
+
+#social li {
+    float:left;
+    width:calc(100% / 3);
+}
+
+#social li:nth-of-type(2) {
+    text-align:center;
+}
+
+#social li:last-of-type {
+    margin-right:0;
+    text-align:right;
+}
+
+#social a {
+    font-size:1.5rem;
+    color:#ffffff;
+    border-bottom:2px solid #00000000;
+    transition:border 0.2s ease;
+}
+
+#social a:hover {
+    border-color:#ffffff;
+    transition:border 0.2s ease;
 }
 
 video {
@@ -151,6 +217,7 @@ video {
     font-size:5rem;
     vertical-align: center;
     line-height:15rem;
+    font-weight: 100;
 }
 
 #title {
@@ -213,7 +280,7 @@ video {
     padding:0 1rem;
 }
 
-article div {
+article .pair {
     float:left;
     width:48%;
     margin-right:4%;
@@ -261,8 +328,25 @@ article div:last-of-type {
         transition: transform 0.2s ease;
     }
 
-    article div {
+    article .pair {
         width:100%;
         margin:0 0 1rem 0;
+    }
+
+    #social {
+        display:none;
+    }
+
+    #social li {
+        width:100%;
+        text-align:left;
+    }
+
+    #social li:nth-of-type(2) {
+        text-align:left;
+    }
+
+    #social li:last-of-type {
+        text-align:left;
     }
 }
