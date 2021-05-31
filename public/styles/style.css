@@ -83,6 +83,7 @@ nav a {
     float:left;
     transition: transform 0.2s ease;
     box-shadow:4px 4px #00000033, -2px -2px #ffffff;
+    background-color:#00000011;
     border-radius:0.2rem
 }
 
@@ -137,6 +138,7 @@ article p {
     margin:0;
     padding:0;
     width:100%;
+    text-align: center;
 }
 
 .divide {
@@ -299,13 +301,58 @@ article div:last-of-type {
 }
 
 .project {
+    margin:0;
+    padding:0;
     color:white;
     width:30%;
-    padding:0;
     margin-right:5%;
+    padding:0;
     border-radius:0.2rem;
     float:left;
-    transition: transform 0.2s ease, color 0.2s ease;
+    transition: transform 0.2s ease;
+}
+
+.project a {
+    float:left;
+    display:block;
+    clear:both;
+    margin:0.2rem 1rem;
+    color:green;
+}
+
+.project a:hover {
+    color:lightgreen;
+}
+
+.project ul {
+    width:100%;
+    float:left;
+    padding:0 1rem 0 2rem;
+}
+
+.project li {
+    float:left;
+    width:33%;
+    height:auto;
+    padding:0;
+    margin:0.2rem 0;
+}
+
+.project p {
+    display:block;
+    float:left;
+    padding:1rem;
+}
+
+.project a {
+    display:inline;
+}
+
+.project > div {
+    border:2px solid #333333;
+    background-color: #333333;
+    float:left;
+    box-shadow:2px 2px #000000, -2px -2px #000000;
 }
 
 .project:nth-of-type(3n) {
@@ -316,23 +363,13 @@ article div:last-of-type {
     margin:1rem;
 }
 
-.project:hover {
-    color:green;
-    transform:scale(1.1);
-    transition:transform 0.2s ease, color 0.2s ease;
-}
-
-.project:hover img {
-    border-color:green;
-}
-
 .project h4 {
     text-align: center;
 }
 
 .project img {
     width:100%;
-    border:2px solid #aaaaaa;
+    border-bottom:2px solid #333333;
     padding:0;
     margin:0;
     float:left;
