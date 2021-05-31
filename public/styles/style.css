@@ -483,10 +483,13 @@ article div:last-of-type {
 
     .project {
         width:100%;
+        margin-bottom:2rem;
     }
 
     .work .summary {
         width:100%;
+        margin:0;
+        padding:0;
     }
 
     .work img {
